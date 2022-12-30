@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dankicode JS</title>
+    <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .children {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .children-children {
+            width: 0;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children">
+            <div class="children-children">
+
+            </div>
+        </div>
+        <div class="children">
+            <div class="children-children animation">
+                
+            </div>
+        </div>
+        <div class="children"></div>
+        <div class="children"></div>
+    </div>
+
+    <script src="..\node_modules\jquery\dist\jquery.js">
+    </script>
+    
+    <script>
+        $(function(){
+            let i = 0;
+            $(".parent .children").each(function(){
+                let obj = $(this).find(".children-children");
+                if (obj.length > 0) {
+                    if(obj.hasClass("animation")) {
+                        obj.animate({width:"200px"}, 3000)
+                    }
+                }
+                i++;
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+		if (y <= mayDistance_y && finish_y == false) {
+			y++;
+			if (y == mayDistance_y) {
+				finish_y = true;
+			}
+		} else if (y == 0 && finish_y == true) {
+			finish_y = false;
+		} else {
+			y--;
+		}

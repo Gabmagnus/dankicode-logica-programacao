@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Game",
+      "request": "launch",
+      "mainClass": "ex005.Game",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Game",
+      "request": "launch",
+      "mainClass": "ex004.Game",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "ex003.Main",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "ex002.Main",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch ex003",
+      "request": "launch",
+      "mainClass": "ex003.ex003",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "ex001.Main",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "type": "java",
+      "name": "Launch ex001",
+      "request": "launch",
+      "mainClass": "ex001",
+      "projectName": "logica-de-programacao_5c17d74a"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/gabma/OneDrive/Documentos/GitHub/dankicode/logica-de-programacao/exercicios/c",
+      "program": "c:/Users/gabma/OneDrive/Documentos/GitHub/dankicode/logica-de-programacao/exercicios/c/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

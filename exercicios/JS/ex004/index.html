@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dankicode JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 5vh;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <script src="..\node_modules\jquery\dist\jquery.js"></script>
+    <script>
+        $(function(){
+
+            function seeWidth() {
+                var scrwidth = $(window).width();
+                if (scrwidth < 640) {
+                    $('header').css("background", "red");
+                }
+                else if (scrwidth < 840) {
+                    $('header').css("background", "green");
+                } 
+                else if (scrwidth < 1440) {
+                    $('header').css("background", "yellow");
+                }
+            }
+            $(window).resize(function() {
+                seeWidth();
+
+            })
+        })
+    </script>
+</body>
+</html>
